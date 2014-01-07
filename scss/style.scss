@@ -1,24 +1,33 @@
+$primaryColor: #FF0000;
+
+
 body {
   font-family: Verdana;
   font-size: 1.5em;
+
+  h1 {
+    color: $primaryColor;
+  }
 }
+
 
 #team-members {
-  clear: both;
-}
 
-#team-members .member {
+  clear: both;
+
+  .member {
   float: left;
   /*border: 1px solid gray;*/
   margin: 10px;
   padding: 6px;
-}
+   }
 
-#team-members .member img {
+  img {
   width: 200px;
   height: 200px;
-}
+  }
 
-#team-members .member div.name {
+  div.name {
   text-align: center;  
+  }
 }
