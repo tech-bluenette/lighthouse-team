@@ -5,14 +5,24 @@ body {
     color: red; }
 
 #team-members {
-  clear: both; }
+  display: inline-block; }
   #team-members .member {
     float: left;
     /*border: 1px solid gray;*/
     margin: 10px;
-    padding: 6px; }
+    padding: 6px;
+    height: 300px;
+    width: 180px; }
   #team-members img {
     width: 200px;
     height: 200px; }
   #team-members div.name {
-    text-align: center; }
+    text-align: center;
+    width: 800px; }
+  #team-members:hover .first {
+    opacity: 0;
+    display: none; }
+  #team-members:hover .second {
+    opacity: 1; }
+  #team-members .second {
+    opacity: 0; }

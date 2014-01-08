@@ -13,21 +13,43 @@ body {
 
 #team-members {
 
-  clear: both;
+display: inline-block;
+
 
   .member {
   float: left;
   /*border: 1px solid gray;*/
   margin: 10px;
   padding: 6px;
+  height: 300px;
+  width: 180px;    
    }
 
   img {
   width: 200px;
-  height: 200px;
+  height: 200px; 
   }
+
 
   div.name {
   text-align: center;  
+  width: 800px;
   }
+
+&:hover   {
+  .first {
+    opacity: 0;
+    display: none;
+  }
+  .second {
+    opacity: 1;
+  }
+
+}
+
+
+.second {
+  opacity: 0;
+}
+
 }
