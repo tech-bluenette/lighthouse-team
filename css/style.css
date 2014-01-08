@@ -16,11 +16,13 @@ body {
     position: relative; }
     #team-members .member:hover .first {
       opacity: 0; }
-    #team-members .member:hover .second {
-      opacity: 1;
+    #team-members .member:hover:nth-child(odd) .second {
       -webkit-transform: rotateZ(360deg);
       -moz-transform: rotateZ(360deg);
-      transform: rotateZ(360deg); }
+      transform: rotateZ(360deg);
+      opacity: 1; }
+    #team-members .member:hover:nth-child(odd):nth-child(even) .second {
+      opacity: 1; }
     #team-members .member img {
       width: 200px;
       height: 200px;
@@ -35,4 +37,6 @@ body {
       position: absolute;
       bottom: 80px; }
     #team-members .member .second {
-      opacity: 0; }
+      opacity: 0;
+      -webkit-transition: opacity 0.25s 0.1, left 0s, -webkit-transform 1s;
+      /* Safari */ }
