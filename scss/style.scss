@@ -22,34 +22,36 @@ display: inline-block;
   margin: 10px;
   padding: 6px;
   height: 300px;
-  width: 180px;    
-   }
+  width: 180px; 
+  position: relative;
+
+  &:hover {
+    .first {
+      opacity: 0;
+      
+    }
+    .second {
+      opacity: 1;
+    }
+  }
 
   img {
-  width: 200px;
-  height: 200px; 
+    width: 200px;
+    height: 200px;  
+    position: absolute;
+    top: 0px;
   }
-
 
   div.name {
-  text-align: center;  
+  text-align: left;  
   width: 800px;
+  position: absolute;
+  bottom: 80px;  
   }
 
-&:hover   {
-  .first {
-    opacity: 0;
-    display: none;
-  }
   .second {
-    opacity: 1;
+    opacity: 0;
   }
 
-}
-
-
-.second {
-  opacity: 0;
-}
-
+  }
 }

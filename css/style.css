@@ -12,17 +12,21 @@ body {
     margin: 10px;
     padding: 6px;
     height: 300px;
-    width: 180px; }
-  #team-members img {
-    width: 200px;
-    height: 200px; }
-  #team-members div.name {
-    text-align: center;
-    width: 800px; }
-  #team-members:hover .first {
-    opacity: 0;
-    display: none; }
-  #team-members:hover .second {
-    opacity: 1; }
-  #team-members .second {
-    opacity: 0; }
+    width: 180px;
+    position: relative; }
+    #team-members .member:hover .first {
+      opacity: 0; }
+    #team-members .member:hover .second {
+      opacity: 1; }
+    #team-members .member img {
+      width: 200px;
+      height: 200px;
+      position: absolute;
+      top: 0px; }
+    #team-members .member div.name {
+      text-align: left;
+      width: 800px;
+      position: absolute;
+      bottom: 80px; }
+    #team-members .member .second {
+      opacity: 0; }
